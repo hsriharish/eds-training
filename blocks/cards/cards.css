@@ -12,6 +12,21 @@
   background-color: var(--background-color);
 }
 
+@media (width <= 968px) {
+  .cards.reverse > ul > li {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.cards.reverse html[dir='rtl'] {
+  color: green;
+}
+
+.cards.reverse {
+  color: red;
+}
+
 .cards .cards-card-body {
   margin: 16px;
 }
